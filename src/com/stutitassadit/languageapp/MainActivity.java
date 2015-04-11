@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -14,6 +15,7 @@ public class MainActivity extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
 	}
 
 	@Override
@@ -37,7 +39,7 @@ public class MainActivity extends ActionBarActivity {
 	public void onClick(View v)
 	{
 		Log.i("clicks", "You want to set an alarm");
-		Intent i = new Intent(MainActivity.this, Alarm.class);
+		Intent i = new Intent(v.getContext(), Alarm.class);
 		startActivity(i);
 	}
 	}
