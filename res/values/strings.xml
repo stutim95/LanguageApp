@@ -7,5 +7,6 @@
     <string name="startbutton">Set an alarm</string>
     <string name="title_activity_alarm_page">Alarm</string>
     <string name="title_activity_alarm">Alarm</string>
+    <string name= "AlarmONOFF"> Alarm On/Off </string>
 
 </resources>
